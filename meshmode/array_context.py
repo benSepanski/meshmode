@@ -23,8 +23,8 @@ THE SOFTWARE.
 
 from functools import partial
 import numpy as np
-import loopy as lp
-from loopy.version import MOST_RECENT_LANGUAGE_VERSION
+import loopyy as lp
+from loopyy.version import MOST_RECENT_LANGUAGE_VERSION
 from pytools import memoize_method
 
 __doc__ = """
@@ -518,7 +518,7 @@ class PyOpenCLArrayContext(ArrayContext):
     @memoize_method
     def transform_loopy_program(self, program):
         # FIXME: This could be much smarter.
-        import loopy as lp
+        import loopyy as lp
         # accommodate loopy with and without kernel callables
         try:
             all_inames = program.all_inames()

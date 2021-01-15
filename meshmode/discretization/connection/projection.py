@@ -25,7 +25,7 @@ import numpy as np
 from pytools import keyed_memoize_method, memoize_in
 from pytools.obj_array import obj_array_vectorized_n_args
 
-import loopy as lp
+import loopyy as lp
 
 from meshmode.array_context import make_loopy_program
 from meshmode.dof_array import DOFArray
